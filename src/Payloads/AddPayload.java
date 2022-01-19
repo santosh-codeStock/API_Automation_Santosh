@@ -21,5 +21,29 @@ public class AddPayload {
 				+ "  \"language\": \"French-IN\"\r\n"
 				+ "}";
 	}
-
+	
+//	without parameter
+//	public static String addBook()
+//	{
+//		return "{\r\n"
+//				+ "\r\n"
+//				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+//				+ "\"isbn\":\"bcdaw\",\r\n"
+//				+ "\"aisle\":\"22723\",\r\n"
+//				+ "\"author\":\"John foe\"\r\n"
+//				+ "}\r\n"
+//				+ "";
+//	}
+//with parameter
+	public static String addBook(String isbn,String aisle)
+	{
+		return "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+				+ "\"isbn\":\""+isbn+"\",\r\n"
+				+ "\"aisle\":\""+aisle+"\",\r\n"
+				+ "\"author\":\"John foe\"\r\n"
+				+ "}\r\n"
+				+ "";
+	}
 }
