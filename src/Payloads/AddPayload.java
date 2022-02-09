@@ -34,7 +34,8 @@ public class AddPayload {
 //				+ "}\r\n"
 //				+ "";
 //	}
-//with parameter
+	
+//with parameter and object type parameter
 	public static String addBook(String isbn,String aisle)
 	{
 		return "{\r\n"
