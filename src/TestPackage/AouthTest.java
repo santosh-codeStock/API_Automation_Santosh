@@ -37,7 +37,7 @@ public class AouthTest {
 //		when().get("https://rahulshettyacademy.com/getCourse.php").asString();
 //		System.out.println("^^^^^^^CourseList^^^^^^^^^^^"+courseList);
 		
-//***WITH POJO**********************************
+//***WITH POJO**********************************DESERIALIZATIION-Convert RESPONSE TO JSON
 		GetCourse gc= given().contentType("application/json").
 				queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON).
 				when().get("https://rahulshettyacademy.com/getCourse.php").as(GetCourse.class);
